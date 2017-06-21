@@ -1,37 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="423" started-at="2017-06-19T13:38:24Z" finished-at="2017-06-19T13:38:25Z">
+  <suite name="Default suite" duration-ms="34086" started-at="2017-06-21T13:07:23Z" finished-at="2017-06-21T13:07:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="423" started-at="2017-06-19T13:38:24Z" finished-at="2017-06-19T13:38:25Z">
-      <class name="pages.LoginPage">
-        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:pages.LoginPage@3e6fa38a]" name="StartBrowser" is-config="true" duration-ms="6098" started-at="2017-06-19T19:08:18Z" finished-at="2017-06-19T19:08:24Z">
+    <test name="Default test" duration-ms="34086" started-at="2017-06-21T13:07:23Z" finished-at="2017-06-21T13:07:57Z">
+      <class name="testCases.TC_001">
+        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:testCases.TC_001@6d4b1c02]" name="StartBrowser" is-config="true" duration-ms="6041" started-at="2017-06-21T18:37:17Z" finished-at="2017-06-21T18:37:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartBrowser -->
-        <test-method status="FAIL" signature="setData(java.lang.String, java.lang.String)[pri:0, instance:pages.LoginPage@3e6fa38a]" name="setData" duration-ms="0" started-at="2017-06-19T19:08:25Z" data-provider="DP1" finished-at="2017-06-19T19:08:25Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Data Provider public java.lang.String[][] pages.LoginPage.getData() throws java.lang.Exception must return either Object[][] or Iterator<Object>[], not class [[Ljava.lang.String;]]>
-            </message>
+        <test-method status="PASS" signature="testexcel()[pri:1, instance:testCases.TC_001@6d4b1c02]" name="testexcel" duration-ms="34077" started-at="2017-06-21T18:37:23Z" finished-at="2017-06-21T18:37:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testexcel -->
+        <test-method status="FAIL" signature="EndBrowser()[pri:0, instance:testCases.TC_001@6d4b1c02]" name="EndBrowser" is-config="true" duration-ms="0" started-at="2017-06-21T18:37:57Z" finished-at="2017-06-21T18:37:57Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Data Provider public java.lang.String[][] pages.LoginPage.getData() throws java.lang.Exception must return either Object[][] or Iterator<Object>[], not class [[Ljava.lang.String;
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:509)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1293)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1020)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1110)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+              <![CDATA[java.lang.NullPointerException
+	at base.CreateDriver.EndBrowser(CreateDriver.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:357)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
@@ -44,11 +41,11 @@ Data Provider public java.lang.String[][] pages.LoginPage.getData() throws java.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setData -->
-      </class> <!-- pages.LoginPage -->
+        </test-method> <!-- EndBrowser -->
+      </class> <!-- testCases.TC_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
